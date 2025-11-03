@@ -26,7 +26,125 @@
     </header>
     <br>
     <h1 style="color: rgb(16, 148, 157);margin: 20px;">Contenido</h1> <br>
-    <p>En esta sección, exploraremos los atributos en HTML, que son propiedades adicionales que se pueden agregar a las etiquetas para proporcionar información adicional sobre un elemento. Los atributos se definen dentro de la etiqueta de apertura y generalmente vienen en pares de nombre y valor.</p>
+    <p>
+    <h3 style="margin: 20px ;color: white;">En esta sección, exploraremos los atributos en HTML, que son <br>
+        propiedades adicionales que se pueden agregar a las
+        etiquetas para proporcionar información adicional sobre un elemento. <br>Los atributos se definen dentro de la
+        etiqueta de <br>apertura y generalmente vienen en pares de nombre y valor.</p>
+    </h3>
+    <h4 style="margin: 20px; color: white;">
+        Los atributos globales son propiedades que se pueden aplicar a cualquier <br> elemento HTML para modificar su
+        comportamiento o estilo, incluso si el elemento no está especificado en el estándar. Algunos de <br>los más
+        comunes son id, class, style y title. Aunque se pueden aplicar a todos los elementos, su efecto varía y algunos
+        no tendrán <br> un impacto visible en ciertos elementos, como hidden en un elemento
+        <meta>.
+    </h4>
+    <h1 style="margin: 20px;color: rgb(16, 148, 157);">Características clave</h1>
+    <h4 style="margin: 20px;color: white;">Aplicabilidad universal: Se pueden usar en todos los elementos HTML,
+        incluidos los del
+
+        <head style="margin: 20px;color: white;">.
+            Funcionalidad: Permiten añadir parámetros adicionales que <br>modifican el diseño o la funcionalidad de un
+            elemento. <br>
+            Sintaxis: Tienen la misma sintaxis que otros atributos (nombre="valor"), <br>aunque algunos son binarios y
+            no
+            requieren un valor para activarse (por ejemplo, hidden).
+    </h4>
+    <h1 style="margin: 20px;color: rgb(16, 148, 157);"> Ejemplos comunes</h1>
+    <h4 style="margin: 20px;color: white;">id: Asigna un identificador único a un elemento, útil para estilos CSS y
+        manipulación con JavaScript. <br>
+        class: Permite agrupar elementos bajo un mismo nombre para aplicar estilos o realizar acciones colectivas. <br>
+        style: Permite aplicar estilos CSS directamente a un elemento. <br>
+        title: Proporciona información adicional sobre el elemento, que se muestra como una descripción emergente cuando
+        el usuario lo pasa por encima. <br>
+        lang: Indica el idioma del contenido del elemento. <br>
+        data-*: Permite almacenar datos personalizados para usar con JavaScript u otros scripts. </h4>
+
+    <h1 style="margin: 20px;color: rgb(16, 148, 157);">2.- atributos form</h1>
+    <h4 style="margin: 20px;color: white;"> La etiqueta <form> en HTML incluye varios atributos clave para controlar el
+            comportamiento y el envío de datos
+            del formulario. <br> El atributo action especifica la URL o el archivo donde se enviarán los datos del
+            formulario
+            cuando <br> se envíe, pudiendo ser una ruta de servidor o incluso un correo electrónico <br>con el prefijo
+            mailto:.
+            El atributo method define el método<br> HTTP utilizado para enviar los datos, siendo get para incluir los
+            datos
+            en la URL y post para enviarlos <br>en el cuerpo de la solicitud, siendo este último preferido por el W3C
+            por
+            razones de privacidad. <br><br>
+
+            El atributo name proporciona un identificador único para el formulario, <br>lo que facilita su acceso
+            mediante
+            scripts del lado del cliente o procesamiento del lado del servidor. <br>
+            El atributo target indica dónde se abrirá la respuesta del formulario, por ejemplo, _blank para abrir en una
+            nueva pestaña. <br><br>
+            Para formularios que incluyen archivos, el atributo enctype especifica <br> la codificación de los datos,
+            siendo
+            crucial para el envío de archivos. <br>
+            El atributo autocomplete activa o desactiva el autocompletado de <br>los campos del formulario, con el valor
+            por
+            defecto siendo on. <br><br>
+
+            Además, el atributo novalidate desactiva la validación HTML5 del formulario, <br>lo que puede ser útil
+            cuando se
+            desea manejar la validación mediante JavaScript. <br>
+            Otro atributo relevante es accept-charset, que fuerza el uso de una codificación específica para los
+            parámetros de texto del formulario. <br> <br>
+            <h1 style="margin: 20px;color: rgb(16, 148, 157);">Atributos input</h1>
+            Estos atributos permiten una gestión flexible y segura del envío de datos en formularios web. <br><br> <br>
+            <h4>La etiqueta HTML input> permite crear controles interactivos para formularios web, y cuenta con una
+                amplia variedad de atributos que definen su comportamiento, apariencia y funcionalidad. Algunos de los
+                atributos más comunes incluyen: <br>
+
+                name: Asigna un nombre al campo, útil para identificarlo al enviar el formulario y procesar los datos en
+                el servidor. <br><br>
+                type: Define el tipo de entrada esperada, como texto (text), búsqueda (search), correo electrónico
+                (email), URL (url), número telefónico (tel), contraseña (password), número (number), rango (range),
+                fecha (date), entre otros.<br><br>
+                value: Establece el valor predeterminado del campo, que se envía al servidor cuando se envía el
+                formulario.<br><br>
+                placeholder: Muestra un texto de sugerencia dentro del campo cuando está vacío; este texto desaparece
+                cuando el usuario comienza a escribir.<br><br>
+                required: Hace que el campo sea obligatorio, mostrando un mensaje de error si el usuario intenta enviar
+                el formulario sin completarlo.<br><br>
+                maxlength: Limita el número máximo de caracteres que se pueden ingresar en el campo.<br><br>
+                min y max: Establecen los valores mínimo y máximo permitidos para campos numéricos o de fecha.<br><br>
+                step: Define el incremento o decremento para campos numéricos o de rango.<br><br>
+                autocomplete: Controla si el navegador puede autocompletar el valor del campo; puede tener valores
+                como<br><br>
+                on, off, o valores semánticos como name, email, street-address.<br><br>
+                autofocus: Establece el foco en el campo al cargar la página, permitiendo al usuario comenzar a escribir
+                inmediatamente.<br><br>
+                disabled: Desactiva el campo, impidiendo que el usuario interactúe con él.<br><br>
+                readonly: Hace que el campo sea de solo lectura, permitiendo ver el valor pero no modificarlo.<br><br>
+                size: Define el ancho visual del campo, aproximadamente en número de caracteres.<br><br>
+                list: Asocia el campo con una lista de opciones predefinidas, útil para sugerencias.<br><br>
+                form: Permite asociar el campo con un formulario específico, incluso si está fuera del elemento form>.
+                <br><br>
+                accept: Solo aplicable cuando type="file", especifica los tipos de archivos que el servidor acepta.
+                <br><br>
+                pattern: Define una expresión regular que el valor del campo debe cumplir para ser válido.<br><br>
+                Estos atributos, junto con los tipos de <br>entrada disponibles en HTML5, permiten crear formularios más
+                semánticos, accesibles y con validación integrada, <br>mejorando la experiencia del usuario y reduciendo
+                la necesidad de código JavaScript para validaciones básicas.<br><br></h4>
+
+            <H3 style="color: white;margin: 20px;">Nuestra redes sociales</H3>
+            <a href=""><img style="width: 30px;margin: 5px;" src="img.h/instagram.png" alt=""></a>
+            <a href=""><img style="width: 30px;margin: 5px;" src="img.h/gmail.png" alt=""></a>
+            <a href=""><img style="width: 30px;margin: 5px;" src="img.h/logotipo-circular-de-facebook.png" alt=""></a>
+            <a href=""><img style="width: 30px;margin: 5px;" src="img.h/medios-de-comunicacion-social.png" alt=""></a>
+
+
+    </h4>
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
